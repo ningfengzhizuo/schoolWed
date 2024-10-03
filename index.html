@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城郊学校 - 欢迎您</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/城郊学校logo_png.png" alt="城郊学校logo" class="navbar-logo">
+                    <span class="ms-2">阳江市城郊学校</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                学术科研
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#academic">前沿科技研究</a></li>
+                                <li><a class="dropdown-item" href="#academic">学术交流平台</a></li>
+                                <li><a class="dropdown-item" href="#academic">创新人才培养</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                校园生活
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#campus-life">实用信息</a></li>
+                                <li><a class="dropdown-item" href="#campus-life">校园风光</a></li>
+                                <li><a class="dropdown-item" href="#campus-life">清华文创</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#admission">招生信息</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                联系我们
+                            </a>
+                            <div class="dropdown-menu contact-dropdown" aria-labelledby="contactDropdown">
+                                <p class="dropdown-item">地址：阳江市中洲街道津朗大道73号</p>
+                                <p class="dropdown-item">电话：0662-3175657</p>
+                                <p class="dropdown-item">邮箱：cjzx3175657@126.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/carousel1.png" alt="轮播图1">
+                        <div class="hero-content">
+                            <h1>欢迎来到城郊学校</h1>
+                            <p>培养未来的领袖</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/carousel2.png" alt="轮播图2">
+                        <div class="hero-content">
+                            <h1>探索无限可能</h1>
+                            <p>为您的未来铺平道路</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/carousel3.png" alt="轮播图3">
+                        <div class="hero-content">
+                            <h1>优质教育</h1>
+                            <p>激发学生潜能</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/carousel4.png" alt="轮播图4">
+                        <div class="hero-content">
+                            <h1>多彩校园生活</h1>
+                            <p>全面发展，快乐成长</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="text-center mb-5">关于我们</h2>
+                <div class="row">
+                    <div class="about-content">
+                        <p>城郊学校致力于为学生提供卓越的教育体验，培养他们成为未来的领袖和创新者。我们的教育理念注重全面发展，激发学生潜能，培养他们的创新精神和实践能力。</p>
+                        <p>我们拥有先进的教学设施、经验丰富的教师团队，以及丰富多彩的校园活动，为学生创造了一个理想的学习和成长环境。</p>
+                        <button type="button" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                            查看详情
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我们 Modal -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutModalLabel">关于城郊学校</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>一、基本情况</h3>
+                        <p>阳江市城郊学校始建于1983年，重建于2013年，校园占地面积31144平方米，建筑面积9820平方米。学校坚持"以人为本、全面发展"的办学思想，营造"厚德"校园文化氛围，坚持"以德立校、以质兴校、特色强校"的教育理念，实施一体化管理。学校的校风、学风呈良性持续发展，综合实力不断提高，是一所富有朝气、蓬勃发展的九年一贯制学校。</p>
+                        <img src="images/1.jpeg" alt="学校概况" class="img-fluid mb-3">
+
+                        <h3>二、花园式校园</h3>
+                        <p>学校坐落在旧325国道旁，交通便捷，校园绿荫环绕，环境优雅，是学习、生活的理想之所。校园内的教学区、运动区、生活区分布合理，拥有绿地公园、文化长廊、篮球场、乒乓球场等景观设施，良好的校园文化氛围，为学生全面发展提供广阔的空间，为广大教工的工作、学习、生活提供舒适、优美的环境。</p>
+                        <img src="images/640 (1).png" alt="花园式校园" class="img-fluid mb-3">
+
+                        <h3>三、完善的设施设备</h3>
+                        <p>学校拥有先进的教学设备和完善的生活设施，理化生实验室、音乐室、美术室、图书馆、计算机室、多媒体室、体育活动室、心理咨询室等功能教室齐全，功能室各种仪器、设备等配套设施均按创强需要和市义务教育规范化学校的标准配备，还建有200米标准塑胶跑道运动场，校园网络全覆盖，办学条件日臻完善，办学规模不断扩大，正向着教学现代化迈进。</p>
+                        <div class="row">
+                            <div class="col-md-4"><img src="images/640 (2).png" alt="设施1" class="img-fluid mb-3"></div>
+                            <div class="col-md-4"><img src="images/640 (3).png" alt="设施2" class="img-fluid mb-3"></div>
+                            <div class="col-md-4"><img src="images/640 (4).png" alt="设施3" class="img-fluid mb-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"><img src="images/640 (5).png" alt="设施4" class="img-fluid mb-3"></div>
+                            <div class="col-md-6"><img src="images/640 (6).png" alt="设施5" class="img-fluid mb-3"></div>
+                        </div>
+
+                        <h3>四、丰富的校园文化活动</h3>
+                        <p>学校以"活动育人"为主线，积极开展丰富多彩的师生校园文化活动，如每年举办校运会、艺术节、现场书画比赛、演讲比赛、元旦文艺汇演、六一文艺汇演、游园活动等，增进了师生感情，提高了学生素质。浓郁的文化氛围，优美的校园环境，为师生的工作学习和素质发展提供了一个更加广阔的理想空间。</p>
+                        <img src="images/640 (10).png" alt="校园文化活动" class="img-fluid mb-3">
+                        <p>学校整合校内外教育资源设立了乡村少年宫，让更多的乡镇未成年人共享校内外优秀教育资源和成果，培养孩子们的兴趣爱好，拓宽他们的视野、增长他们的见识，提高文化艺术素养，促进乡镇未成年人的全面发展和健康成长，不断提高乡镇未成年人的综合素养。</p>
+                        <div class="row">
+                            <div class="col-md-3"><img src="images/640 (11).png" alt="少年宫1" class="img-fluid mb-3"></div>
+                            <div class="col-md-3"><img src="images/640 (12).png" alt="少年宫2" class="img-fluid mb-3"></div>
+                            <div class="col-md-3"><img src="images/640 (13).png" alt="少年宫3" class="img-fluid mb-3"></div>
+                            <div class="col-md-3"><img src="images/640 (14).png" alt="少年宫4" class="img-fluid mb-3"></div>
+                        </div>
+
+                        <h3>五、务实的师资队伍</h3>
+                        <p>学校师资力量雄厚，拥有一支德才兼备、业务精良、爱岗敬业的教师队伍。学校有市、区两级优秀教师、优秀班主任和先进教育工作者30多名。学校专任教师以中、高级职称教师为主体，教师学历达标率100%，形成了"爱生、严谨、善导、实效"的良好教风。</p>
+
+                        <h3>六、丰硕的办学成果</h3>
+                        <p>近年来，在区委、区政府和区教育局的正确领导下，学校锐意进取，积极创新，全力推行教育教学改革，以创办让人民满意的教育为目标，遵循"面向全体、因材施教、分类指导、整体推进"的教学准则，不断完善"德育为首、科研先行、优化师资、科学评价、全面育人"的综合管理措施，办学成效显著，得到上级领导和社会的肯定。学校曾分别被授予"江城区先进职工之家"、"江城区德育示范学校"、"江城区文明学校"、"江城区教育创强工作先进单位"、"阳江市平安校园示范学校"、"广东省义务教育标准化学校"、"广东省安全文明校园"、"江城区关工委先进单位"、"阳江市先进职工之家"、"江城区毒品预防教育示范学校"等荣誉称号，学校社会声誉不断提升，学校发展不断迈上新台阶！</p>
+                        <div class="row">
+                            <div class="col-md-6"><img src="images/640 (15).png" alt="成果1" class="img-fluid mb-3"></div>
+                            <div class="col-md-6"><img src="images/640.png" alt="成果2" class="img-fluid mb-3"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="academic" class="academic">
+            <div class="container">
+                <h2 class="text-center mb-5">学术科研</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <p class="text-center mb-5">
+                            城郊学校始终坚持面向世界科技前沿和国家重大战略需要，坚定地走中国特色自主创新之路。百年创新，硕果累累，清华师生在科技进步和学术发展中填补了一个又一个空白，刷新着一项又一项纪录，作出了重要的思想、理论和知识贡献。
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">前沿科技研究</h5>
+                                <p class="card-text">探索尖端科技，引领创新发展。</p>
+                                <a href="https://www.tsinghua.edu.cn/info/1175/114064.htm" class="btn btn-primary" target="_blank">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">学术交流平台</h5>
+                                <p class="card-text">促进国内外学术交流，拓展研究视野。</p>
+                                <a href="https://www.keoaeic.org/#:~:text=AEIC%E5%AD%A6%E6%9C%AF%E4%BA%A4%E6%B5%81%E4%B8%AD%E5%BF%83" class="btn btn-primary" target="_blank">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">创新人才培养</h5>
+                                <p class="card-text">培养具有创新精神和实践能力的人才。</p>
+                                <a href="http://theory.people.com.cn/n1/2021/1206/c40531-32300114.html" class="btn btn-primary" target="_blank">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 添加更多部分：最新消息与活动、学生成就展示等 -->
+
+    </main>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">宁锋制作，盗版有你。</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://www.douyin.com/user/MS4wLjABAAAAqPD9FsnuzAVa83eHRLK0FzBUJqZz4JFo1Vf673L4h9jyiI81Q1Qq4sHx4PIXHOuE?from_tab_name=main" target="_blank" title="抖音"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://space.bilibili.com/1884472268?spm_id_from=333.337.0.0" target="_blank" title="bilibili"><i class="fab fa-bilibili"></i></a>
+                        <a href="https://fzapph5.gjfzpt.cn/QRCode/#:~:text=%E5%85%AC%E5%AE%89%E9%83%A8%E6%89%93%E5%87%BB%E6%B2%BB%E7%90%86%E7%94%B5%E4%BF%A1%E7%BD%91" target="_blank" title="国家反诈中心"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

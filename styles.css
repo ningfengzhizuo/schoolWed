@@ -1,0 +1,509 @@
+/* 在文件顶部添加字体声明 */
+@font-face {
+    font-family: 'HuaWenXingKai';
+    src: url('path/to/HuaWenXingKai.ttf') format('truetype');
+}
+
+body {
+    font-family: 'HuaWenXingKai', 'STXingkai', 'KaiTi', 'SimSun', serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 0;
+    background-image: url('images/OIP-C (1).png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    padding-top: 0.3rem;    /* 减小上下内边距 */
+    padding-bottom: 0.3rem;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.navbar-logo {
+    height: 55px; /* 略微增加logo高度 */
+    width: auto;
+    max-height: 55px; /* 确保logo不会超过导航栏高度 */
+}
+
+.navbar-brand span {
+    font-family: 'HuaWenXingKai', 'STXingkai', 'KaiTi', 'SimSun', serif;
+    font-size: 1.1rem; /* 稍微减小字体大小 */
+    color: #333;
+    margin-left: 8px; /* 减少间距 */
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.show .nav-link {
+    color: #007bff !important;
+}
+
+/* 英雄区域样式 */
+.hero {
+    position: relative;
+    height: 100vh; /* 保持全屏高度 */
+    overflow: hidden;
+    padding-bottom: 140px; /* 增加底部内边距，为按钮腾出更多空间 */
+    padding-top: 70px; /* 为固定导航栏留出空间 */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-family: 'HuaWenXingKai', 'STXingkai', 'KaiTi', 'SimSun', serif;
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-family: 'HuaWenXingKai', 'STXingkai', 'KaiTi', 'SimSun', serif;
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    position: absolute;
+    bottom: 100px; /* 将按钮位置从 60px 调整到 100px，使其再下移约两行 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* 部分样式 */
+section {
+    padding: 80px 0;
+}
+
+/* 更新页脚样式 */
+footer {
+    background-color: rgba(248, 249, 250, 0.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+footer h5 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    font-size: 1.5rem;
+}
+
+.social-icons a {
+    color: #333;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 767px) {
+    footer .col-md-4 {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    
+    footer .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        padding-bottom: 120px; /* 在小屏幕上稍微减少内边距，但仍保持足够空间 */
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero .btn {
+        bottom: 80px; /* 在小屏幕上也相应下移按钮 */
+    }
+
+    .navbar-logo {
+        height: 45px; /* 在小屏幕上稍微减小logo大小，但仍然比原来大 */
+    }
+    
+    .navbar-brand span {
+        font-size: 0.9rem; /* 在小屏幕上进一步减小字体大小 */
+    }
+}
+
+/* 将下拉菜单向左移动 */
+.navbar-nav .dropdown-menu {
+    left: auto;
+    right: 0;
+    transform: translateX(20px); /* 向左移动20px，您可以根据需要调整这个值 */
+}
+
+/* 确保在小屏幕上下拉菜单仍然正确显示 */
+@media (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        left: 0;
+        right: auto;
+        transform: none;
+    }
+}
+
+/* 在文件末尾添加以下样式 */
+
+.about, .academic {
+    padding: 60px 0;
+}
+
+.about h2, .academic h2 {
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.anti-fraud-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* 在文件末尾添加以下样式 */
+
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-body h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.modal-body p {
+    text-indent: 2em;
+    line-height: 1.8;
+}
+
+.modal-body img {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.modal-body img:hover {
+    transform: scale(1.05);
+}
+
+.about img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.about h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.about .btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+.about .btn-outline-primary:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+.about {
+    position: relative;
+    background-image: url('images/OIP-C.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 0;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* 在文件末尾添加以下样式 */
+
+.academic {
+    background-image: url('images/下载.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 80px 0;
+    color: white;
+}
+
+.academic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.academic .container {
+    position: relative;
+    z-index: 1;
+}
+
+.academic h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.academic p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: white;
+}
+
+.academic .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.academic .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.academic .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.academic .card-title {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.academic .card-text {
+    color: #333;
+}
+
+.academic .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-top: auto;
+}
+
+.academic .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* 联系我们模态框样式 */
+#contactModal .modal-content {
+    border-radius: 15px;
+}
+
+#contactModal .modal-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#contactModal .modal-title {
+    font-weight: bold;
+}
+
+#contactModal .modal-body p {
+    margin-bottom: 10px;
+}
+
+#contactModal .modal-body strong {
+    color: #007bff;
+}
+
+/* 更新下拉菜单样式 */
+.dropdown-menu {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+/* 联系我们下拉菜单特殊样式 */
+.contact-dropdown {
+    min-width: 250px;
+    padding: 1rem;
+}
+
+.contact-dropdown .dropdown-item {
+    white-space: normal;
+    word-wrap: break-word;
+    margin-bottom: 0.5rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+
+    .navbar-nav .dropdown-item {
+        padding: 0.5rem 1rem;
+    }
+
+    .contact-dropdown {
+        background-color: transparent;
+        padding: 0;
+    }
+}
