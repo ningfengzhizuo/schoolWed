@@ -507,3 +507,144 @@ footer ul li {
         padding: 0;
     }
 }
+
+/* 政策公告模态框样式 */
+#policyModal .modal-content,
+#enrollmentModal .modal-content {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#policyModal .modal-header,
+#enrollmentModal .modal-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#policyModal .modal-body,
+#enrollmentModal .modal-body {
+    padding: 30px;
+}
+
+#policyModal .modal-footer,
+#enrollmentModal .modal-footer {
+    border-top: none;
+    padding: 20px 30px 30px;
+}
+
+#policyModal .btn,
+#enrollmentModal .btn {
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+#enrollmentForm .form-label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#enrollmentForm .form-control,
+#enrollmentForm .form-select {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 12px 15px;
+}
+
+#enrollmentForm .form-control:focus,
+#enrollmentForm .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* 模态框样式 */
+.modal-content {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal-dialog {
+    max-width: 800px; /* 增加模态框宽度 */
+}
+
+.btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    opacity: 1;
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.modal-body {
+    max-height: 80vh; /* 限制最大高度为视口高度的80% */
+    overflow-y: auto; /* 添加垂直滚动条 */
+    padding: 30px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.modal-body hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.modal-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #4e54c8;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+    color: #4e54c8;
+}
+
+/* 添加一些动画效果 */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: scale(0.95);
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+.modal-body h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff; /* 使小标题更显眼 */
+}
+
+.modal-body ol {
+    padding-left: 20px;
+}
+
+.modal-body li {
+    margin-bottom: 10px;
+}
